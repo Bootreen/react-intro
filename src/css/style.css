@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  margin: 1.5rem 0 1rem;
+}
+
+h2 {
+  margin: 0.8rem 0 0.1rem;
+}
+
+button {
+  margin: 0.5rem auto;
+  padding: 0.5rem 1.5rem;
+}
+
+.card {
+  width: 20rem;
+  margin: 0.25rem 0;
+  background-color: bisque;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
