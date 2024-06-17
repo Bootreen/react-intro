@@ -5,7 +5,7 @@ export const characters = [
     age: 10,
     hair: "brown",
     desc: `Eric Theodore Cartman, usually referred to as just Cartman, is one of the main characters, along with Stan Marsh, Kyle Broflovski, and Kenny McCormick. Cartman is sometimes the main antagonist of an episode, for example "Trapper Keeper". None of the other three main children really consider Cartman their friend and do not know why they started hanging out with him in the first place, but a certain form of unstable friendship ends up being born between them. However he is usually Kyle's first choice when he breaks his friendship with Stan. In earlier episodes, Kenny was his best friend, however, in later seasons, Butters Stotch is usually depicted as such.`,
-    img: "./public/img/cartman.jpg",
+    img: "./img/cartman.jpg",
   },
   {
     name: "Stan Marsh",
