@@ -45,15 +45,24 @@ button {
   justify-content: space-between;
 }
 
+.info {
+  justify-content: flex-start;
+}
+
 .info ul {
   font-size: 1.4rem;
   line-height: 2rem;
-  margin: 6rem 4rem 0 0;
+  margin: 7rem 0 0 3rem;
+}
+
+.imgCont {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 img {
-  height: 280px;
-  margin: 1rem 0 1rem 2rem;
+  height: 250px;
 }
 
 .desc {
