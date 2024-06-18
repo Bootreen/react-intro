@@ -6,7 +6,7 @@ import "./css/style.css";
 
 const App = () => {
   const feedback = characters.map(() => false);
-  const colors = characters.map(() => "Black");
+  const colors = characters.map(() => "#000000");
   const [id, setId] = useState(0);
   const [language, setLanguage] = useState("en");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,8 +26,8 @@ const App = () => {
   const onLikeClickHandler = () =>
     setIsLiked(isLiked.toSpliced(id, 1, !isLiked[id]));
 
-  const onColorPickHandler = (color) =>
-    setColorMap(colorMap.toSpliced(id, 1, color));
+  const onColorPickHandler = (event) =>
+    setColorMap(colorMap.toSpliced(id, 1, event.target.value));
 
   return (
     <Fragment>

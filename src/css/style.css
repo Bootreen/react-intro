@@ -17,6 +17,7 @@
 
 .name {
   color: white;
+  background-color: black;
   height: 60%;
   margin-top: 1rem;
   padding: 0 1rem;
@@ -27,46 +28,11 @@
   align-items: center;
 }
 
-.Black {
-  background-color: Black;
-}
-
-.DarkRed {
-  background-color: DarkRed;
-}
-
-.Indigo {
-  background-color: Indigo;
-}
-
-.Sienna {
-  background-color: Sienna;
-}
-
-.DarkGreen {
-  background-color: DarkGreen;
-}
-
-.Teal {
-  background-color: Teal;
-}
-
-.DimGray {
-  background-color: DimGray;
-}
-
-.SlateGray {
-  background-color: SlateGray;
-}
-
-.Olive {
-  background-color: Olive;
-}
-
-#color {
-  margin-left: 3rem;
-  height: 2rem;
-  width: 6rem;
+.name input {
+  position: absolute;
+  width: 30rem;
+  height: 3.2rem;
+  opacity: 0;
 }
 
 button {
