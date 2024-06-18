@@ -20,7 +20,7 @@ export const Card = ({
       <div className='header'>
         <button onClick={() => paging("left")}>◄</button>
         <div className='name' style={{ background: colors[id] }}>
-          <h1>{name}</h1>
+          <h2>{name}</h2>
           <input
             type='color'
             value={colors[id]}
