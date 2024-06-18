@@ -51,6 +51,18 @@
   background-color: Teal;
 }
 
+.DimGray {
+  background-color: DimGray;
+}
+
+.SlateGray {
+  background-color: SlateGray;
+}
+
+.Olive {
+  background-color: Olive;
+}
+
 #color {
   height: 2rem;
   width: 6rem;
