@@ -1,4 +1,13 @@
-export const Card = ({ name, gender, age, hair, desc, img, handler }) => {
+export const Card = ({
+  name,
+  gender,
+  age,
+  hair,
+  desc,
+  img,
+  language,
+  handler,
+}) => {
   return (
     <div className='card'>
       <div className='header'>
@@ -12,17 +21,17 @@ export const Card = ({ name, gender, age, hair, desc, img, handler }) => {
         </div>
         <ul>
           <li>
-            <strong>Gender:</strong> {gender}
+            <strong>Gender:</strong> {gender[language]}
           </li>
           <li>
             <strong>Age:</strong> {age}
           </li>
           <li>
-            <strong>Hair:</strong> {hair}
+            <strong>Hair:</strong> {hair[language]}
           </li>
         </ul>
       </div>
-      <p className='desc'>{desc}</p>
+      <p className='desc'>{desc[language]}</p>
     </div>
   );
 };
