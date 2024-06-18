@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card } from "./Card";
+import { Card } from "./card";
 import { characters } from "./database";
 import "./css/style.css";
 
