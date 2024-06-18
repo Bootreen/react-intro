@@ -40,12 +40,13 @@ button {
 }
 
 .locale {
-  width: 6rem;
-  justify-content: space-between;
+  width: 8rem;
+  justify-content: flex-end;
+  column-gap: 0.5rem;
 }
 
 .login {
-  width: 11rem;
+  width: 12rem;
   justify-content: flex-end;
 }
 
