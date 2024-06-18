@@ -6,4 +6,5 @@ export const locale = {
   gender: { en: "Gender:", de: "Geschlecht:" },
   age: { en: "Age:", de: "Alter:" },
   hair: { en: "Hair:", de: "Haarfarbe:" },
+  like: { en: "Like it!", de: "Das gefällt!" },
 };

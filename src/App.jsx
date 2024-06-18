@@ -5,9 +5,11 @@ import { characters } from "./database";
 import "./css/style.css";
 
 const App = () => {
+  const feedback = characters.map(() => false);
   const [id, setId] = useState(0);
   const [language, setLanguage] = useState("en");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLiked, setIsLiked] = useState(feedback);
   const { name, gender, age, hair, desc, img } = characters[id];
 
   const onPagingClickHandler = (direction) => {
@@ -18,6 +20,9 @@ const App = () => {
   const onLoginClickHandler = () => setIsLoggedIn(isLoggedIn ? false : true);
 
   const onLocaleChangeHandler = (lang) => setLanguage(lang);
+
+  const onLikeClickHandler = () =>
+    setIsLiked(isLiked.toSpliced(id, 1, !isLiked[id]));
 
   return (
     <Fragment>
@@ -36,7 +41,7 @@ const App = () => {
         </div>
         <div className='login'>
           <div className='avatar'>
-            {isLoggedIn && <img src='./boot-ava.jpg' alt='' />}
+            {isLoggedIn && <img src='./boot-ava.jpg' alt='User avatar' />}
           </div>
           <button onClick={onLoginClickHandler}>
             {isLoggedIn ? locale.logout[language] : locale.login[language]}
@@ -44,6 +49,7 @@ const App = () => {
         </div>
       </div>
       <Card
+        id={id}
         name={name}
         gender={gender}
         age={age}
@@ -51,7 +57,9 @@ const App = () => {
         desc={desc}
         img={img}
         language={language}
-        handler={onPagingClickHandler}
+        paging={onPagingClickHandler}
+        liking={onLikeClickHandler}
+        feedback={isLiked}
       />
     </Fragment>
   );
