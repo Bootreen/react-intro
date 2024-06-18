@@ -25,6 +25,40 @@ button {
   padding: 0.1rem 0.5rem;
 }
 
+.options,
+.locale,
+.login {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  width: 100vw;
+  margin: -4rem 2rem 0 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.locale {
+  width: 6rem;
+  justify-content: space-between;
+}
+
+.login {
+  width: 11rem;
+  justify-content: flex-end;
+}
+
+.avatar {
+  width: 4rem;
+}
+
+.avatar img {
+  border-radius: 4rem;
+  width: 4rem;
+  height: auto;
+}
+
 .card {
   width: 40rem;
   margin: 5rem 0;
