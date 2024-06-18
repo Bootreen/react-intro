@@ -11,13 +11,17 @@ export const Card = ({
   language,
   paging,
   liking,
+  coloring,
   feedback,
+  colors,
 }) => {
   return (
     <div className='card'>
       <div className='header'>
         <button onClick={() => paging("left")}>◄</button>
-        <h1>{name}</h1>
+        <div className={`name ${colors[id]}`}>
+          <h1>{name}</h1>
+        </div>
         <button onClick={() => paging("right")}>►</button>
       </div>
       <div className='info'>
@@ -41,6 +45,18 @@ export const Card = ({
         <div className='like'>
           {feedback[id] && <img src='./like.png' alt='"like" icon' />}
         </div>
+        <select
+          id='color'
+          name='color'
+          onChange={(event) => coloring(event.target.value)}
+        >
+          <option value='Black'>Black</option>
+          <option value='DarkRed'>DarkRed</option>
+          <option value='Indigo'>Indigo</option>
+          <option value='Sienna'>Sienna</option>
+          <option value='DarkGreen'>DarkGreen</option>
+          <option value='Teal'>Teal</option>
+        </select>
         <button onClick={liking}>{locale.like[language]}</button>
       </div>
     </div>

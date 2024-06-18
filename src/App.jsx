@@ -6,10 +6,12 @@ import "./css/style.css";
 
 const App = () => {
   const feedback = characters.map(() => false);
+  const colors = characters.map(() => "Black");
   const [id, setId] = useState(0);
   const [language, setLanguage] = useState("en");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLiked, setIsLiked] = useState(feedback);
+  const [colorMap, setColorMap] = useState(colors);
   const { name, gender, age, hair, desc, img } = characters[id];
 
   const onPagingClickHandler = (direction) => {
@@ -23,6 +25,9 @@ const App = () => {
 
   const onLikeClickHandler = () =>
     setIsLiked(isLiked.toSpliced(id, 1, !isLiked[id]));
+
+  const onColorPickHandler = (color) =>
+    setColorMap(colorMap.toSpliced(id, 1, color));
 
   return (
     <Fragment>
@@ -59,7 +64,9 @@ const App = () => {
         language={language}
         paging={onPagingClickHandler}
         liking={onLikeClickHandler}
+        coloring={onColorPickHandler}
         feedback={isLiked}
+        colors={colorMap}
       />
     </Fragment>
   );

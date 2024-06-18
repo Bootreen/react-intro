@@ -15,8 +15,45 @@
   align-items: center;
 }
 
-h1 {
-  margin: 1.5rem 0 1rem;
+.name {
+  color: white;
+  height: 60%;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Black {
+  background-color: Black;
+}
+
+.DarkRed {
+  background-color: DarkRed;
+}
+
+.Indigo {
+  background-color: Indigo;
+}
+
+.Sienna {
+  background-color: Sienna;
+}
+
+.DarkGreen {
+  background-color: DarkGreen;
+}
+
+.Teal {
+  background-color: Teal;
+}
+
+#color {
+  height: 2rem;
+  width: 6rem;
 }
 
 button {
@@ -111,9 +148,11 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .like {
+  width: 2rem;
   height: 100%;
   margin-left: 0.6rem;
   display: flex;
