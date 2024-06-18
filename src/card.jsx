@@ -1,3 +1,5 @@
+import { locale } from "./locale";
+
 export const Card = ({
   name,
   gender,
@@ -21,13 +23,13 @@ export const Card = ({
         </div>
         <ul>
           <li>
-            <strong>Gender:</strong> {gender[language]}
+            <strong>{locale.gender[language]}</strong> {gender[language]}
           </li>
           <li>
-            <strong>Age:</strong> {age}
+            <strong>{locale.age[language]}</strong> {age}
           </li>
           <li>
-            <strong>Hair:</strong> {hair[language]}
+            <strong>{locale.hair[language]}</strong> {hair[language]}
           </li>
         </ul>
       </div>
